@@ -23,7 +23,7 @@ public class HelloController implements Initializable {
     @FXML
     private Button loginButton;
     @FXML
-    private Label loginMessageLabel;
+    public Label loginMessageLabel;
     @FXML
     private ImageView brandingImageView;
     @FXML

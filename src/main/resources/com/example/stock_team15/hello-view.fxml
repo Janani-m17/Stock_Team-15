@@ -15,7 +15,7 @@
     <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
         <ImageView fx:id="brandingImageView" fitHeight="387.0" fitWidth="665.0" layoutX="2.0" layoutY="41.0" pickOnBounds="true" preserveRatio="true">
             <image>
-                <Image url="C:\Users\Admin\IdeaProjects\java-project1\Stock_Team-15\StockImages\stockb.png" />
+                <Image url="@../../../../../Downloads/stockb.png" />
             </image>
         </ImageView>
         <Label layoutX="53.0" layoutY="60.0" prefHeight="76.0" prefWidth="612.0" text="WELCOME TO STOCK PORTFOLIO TRACKER" textFill="#f3f5fc" textOverrun="CLIP">
