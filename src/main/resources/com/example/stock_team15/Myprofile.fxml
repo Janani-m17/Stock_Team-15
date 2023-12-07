@@ -8,7 +8,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="570.0" prefWidth="674.0" style="-fx-background-color: #99CCFF;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.stock_team15.MyProfileController">
+<AnchorPane prefHeight="570.0" prefWidth="674.0" style="-fx-background-color: #003366;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
    <children>
       <AnchorPane prefHeight="110.0" prefWidth="674.0" style="-fx-background-color: #0080FF;">
          <children>
@@ -29,39 +29,39 @@
             </ImageView>
          </children>
       </AnchorPane>
-      <Label layoutX="124.0" layoutY="173.0" prefHeight="35.0" prefWidth="174.0" text="Username">
+      <Label layoutX="124.0" layoutY="173.0" prefHeight="35.0" prefWidth="174.0" text="Username" textFill="#fcfcfc">
          <font>
             <Font size="24.0" />
          </font>
       </Label>
       <TextField layoutX="368.0" layoutY="178.0" />
       <Label layoutX="142.0" layoutY="248.0" />
-      <Label layoutX="123.0" layoutY="240.0" prefHeight="35.0" prefWidth="124.0" text="Password">
+      <Label layoutX="123.0" layoutY="240.0" prefHeight="35.0" prefWidth="124.0" text="Password" textFill="WHITE">
          <font>
             <Font size="24.0" />
          </font>
       </Label>
       <TextField layoutX="369.0" layoutY="245.0" />
       <Label layoutX="135.0" layoutY="315.0" />
-      <Label layoutX="124.0" layoutY="315.0" text="Email ID">
+      <Label layoutX="124.0" layoutY="315.0" text="Email ID" textFill="WHITE">
          <font>
             <Font size="24.0" />
          </font>
       </Label>
       <TextField layoutX="370.0" layoutY="311.0" />
-      <Label layoutX="123.0" layoutY="380.0" prefHeight="35.0" prefWidth="124.0" text="Phone No">
+      <Label layoutX="123.0" layoutY="380.0" prefHeight="35.0" prefWidth="124.0" text="Phone No" textFill="WHITE">
          <font>
             <Font size="24.0" />
          </font>
       </Label>
       <TextField layoutX="371.0" layoutY="385.0" />
-      <Label layoutX="118.0" layoutY="458.0" text="Date of Birth">
+      <Label layoutX="118.0" layoutY="458.0" text="Date of Birth" textFill="WHITE">
          <font>
             <Font size="24.0" />
          </font>
       </Label>
       <TextField layoutX="369.0" layoutY="463.0" />
-      <Button fx:id="addBankButton" layoutX="247.0" layoutY="516.0" mnemonicParsing="false" onAction="#addBankButtonOnAction" style="-fx-background-color: #00CC00;" text="Add Bank Details">
+      <Button layoutX="276.0" layoutY="516.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="124.0" style="-fx-background-color: #00CC00;" text="Bank Details">
          <font>
             <Font name="System Italic" size="18.0" />
          </font>
