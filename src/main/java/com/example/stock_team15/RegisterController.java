@@ -87,25 +87,13 @@ public class RegisterController implements Initializable {
             Statement statement =  connection.createStatement();
             statement.executeUpdate(insertToRegister);
             registerationMessageLabel.setText("Registered Successfully");
-            homePage1();
         } catch (Exception e) {
             e.printStackTrace();
             e.getCause();
         }
     }
 
-    public void homePage1() {
-        try {
-            Parent root = FXMLLoader.load(getClass().getResource("Data.fxml"));
-            Stage registerStage = new Stage();
-            registerStage.initStyle(StageStyle.UNDECORATED);
-            registerStage.setScene(new Scene(root, 723, 862));
-            registerStage.show();
-        } catch (Exception e) {
-            e.printStackTrace();
-            e.getCause();
-        }
-    }
+
 
     }
 
