@@ -7,7 +7,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="1187.0" prefWidth="885.0" style="-fx-background-color: #003366;" xmlns="http://javafx.com/javafx/20" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane prefHeight="1187.0" prefWidth="885.0" style="-fx-background-color: #003366;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.stock_team15.BuyController">
    <children>
       <AnchorPane layoutX="52.0" layoutY="51.0" prefHeight="175.0" prefWidth="200.0" style="-fx-background-color: #E0E0E0;">
          <children>
@@ -372,6 +372,6 @@
             </Label>
          </children>
       </AnchorPane>
-      <Button layoutX="735.0" layoutY="6.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="120.0" style="-fx-background-color: #00CC66;" text="ADD STOCKS" />
+      <Button fx:id="buyButton" layoutX="735.0" layoutY="6.0" mnemonicParsing="false" onAction="#buyButtonOnAction" prefHeight="35.0" prefWidth="120.0" style="-fx-background-color: #00CC66;" text="ADD STOCKS" />
    </children>
 </AnchorPane>
