@@ -14,6 +14,7 @@ import javafx.scene.image.ImageView;
 import javafx.stage.Stage;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.stage.StageStyle;
 
 import java.io.File;
 import java.io.IOException;
@@ -30,7 +31,6 @@ public class HelloController implements Initializable {
     private Scene scene;
     private Parent root;
 
-
     @FXML
     private Button loginButton;
     @FXML
@@ -41,8 +41,8 @@ public class HelloController implements Initializable {
     private TextField username;
     @FXML
     private PasswordField password;
-
-
+    @FXML
+    private Button signupButton;
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle){
@@ -50,8 +50,8 @@ public class HelloController implements Initializable {
         Image brandingImage = new Image(brandingFile.toURI().toString());
         brandingImageView.setImage(brandingImage);
     }
-    public Button loginButtonOnAction(ActionEvent event){
 
+    public Button loginButtonOnAction(ActionEvent event){
         if(!username.getText().isBlank() && !password.getText().isBlank()){
             validateLogin();
         }
@@ -68,31 +68,41 @@ public class HelloController implements Initializable {
         stage.setScene(scene);
         stage.show();
     }
-    public void validateLogin(){
+
+    public void validateLogin() {
         DatabaseConnection connection = new DatabaseConnection();
         Connection connectDB = connection.getConnection();
 
-        String verifyLogin = "SELECT count(1) FROM User WHERE UserName = '" + username.getText() + "' AND Password ='" + password.getText() +  "'";
+        String verifyLogin = "SELECT count(1) FROM User WHERE UserName = '" + username.getText() + "' AND Password ='" + password.getText() + "'";
 
-        try{
-
+        try {
             Statement statement = connectDB.createStatement();
             ResultSet queryResult = statement.executeQuery(verifyLogin);
 
-            while (queryResult.next()){
-                if(queryResult.getInt(1)==1){
-                    loginMessageLabel.setText("You are Logged In");
-                }else {
+            while (queryResult.next()) {
+                if (queryResult.getInt(1) == 1) {
+                    homePage();
+                    //loginMessageLabel.setText("You are Logged In");
+                } else {
                     loginMessageLabel.setText("Invalid Login");
                 }
             }
-        }catch (Exception e){
+        } catch (Exception e) {
             e.printStackTrace();
             e.getCause();
         }
-
     }
 
-
-
+    public void homePage() {
+        try{
+            Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("Data.fxml")));
+            Stage registerStage = new Stage();
+            registerStage.initStyle(StageStyle.UNDECORATED);
+            registerStage.setScene(new Scene(root, 723, 862));
+            registerStage.show();
+        } catch (Exception e){
+            e.printStackTrace();
+            e.getCause();
+        }
+    }
 }

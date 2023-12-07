@@ -8,7 +8,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="570.0" prefWidth="674.0" style="-fx-background-color: #99CCFF;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane prefHeight="570.0" prefWidth="674.0" style="-fx-background-color: #99CCFF;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.stock_team15.MyProfileController">
    <children>
       <AnchorPane prefHeight="110.0" prefWidth="674.0" style="-fx-background-color: #0080FF;">
          <children>
@@ -61,7 +61,7 @@
          </font>
       </Label>
       <TextField layoutX="369.0" layoutY="463.0" />
-      <Button layoutX="276.0" layoutY="516.0" mnemonicParsing="false" style="-fx-background-color: #00CC00;" text="Bank Details">
+      <Button fx:id="addBankButton" layoutX="247.0" layoutY="516.0" mnemonicParsing="false" onAction="#addBankButtonOnAction" style="-fx-background-color: #00CC00;" text="Add Bank Details">
          <font>
             <Font name="System Italic" size="18.0" />
          </font>

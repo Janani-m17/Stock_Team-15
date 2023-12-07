@@ -2,6 +2,7 @@
 
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
@@ -12,27 +13,30 @@
 <?import javafx.scene.text.Font?>
 
 <AnchorPane prefHeight="548.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.stock_team15.RegisterController">
-    <ImageView fitHeight="402.0" fitWidth="611.0" layoutY="-7.0" pickOnBounds="true" preserveRatio="true">
-        <Image url="@../../../../../Downloads/stockb.png" />
+    <ImageView fx:id="shieldImageView" fitHeight="402.0" fitWidth="611.0" layoutY="-7.0" pickOnBounds="true">
+      <image>
+         <Image url="@../../../pictures/stockb.jpg" />
+      </image>
     </ImageView>
     <AnchorPane layoutY="368.0" prefHeight="205.0" prefWidth="611.0" style="-fx-background-color: #000000;">
-        <Label layoutX="110.0" layoutY="10.0" prefHeight="18.0" prefWidth="100.0" text="Phone No" textFill="WHITE">
+        <Label layoutX="110.0" layoutY="46.0" prefHeight="18.0" prefWidth="100.0" text="Phone No" textFill="WHITE">
             <font>
                 <Font size="18.0" />
             </font>
         </Label>
-        <Label layoutX="110.0" layoutY="77.0" prefHeight="27.0" prefWidth="112.0" text="Date of Birth" textFill="WHITE">
+        <Label layoutX="104.0" layoutY="90.0" prefHeight="27.0" prefWidth="112.0" text="Date of Birth" textFill="WHITE">
             <font>
                 <Font size="18.0" />
             </font>
         </Label>
-        <TextField layoutX="290.0" layoutY="11.0" />
-        <TextField layoutX="290.0" layoutY="78.0" />
-        <Button layoutX="230.0" layoutY="131.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="150.0" style="-fx-background-color: #00FFFF;" text="Sign Up">
+        <TextField fx:id="phoneTextField" layoutX="290.0" layoutY="47.0" />
+        <TextField fx:id="dobTextField" layoutX="290.0" layoutY="91.0" />
+        <Button layoutX="230.0" layoutY="145.0" mnemonicParsing="false" onAction="#registerButtonOnAction" prefHeight="27.0" prefWidth="150.0" style="-fx-background-color: #00FFFF;" text="Sign Up">
             <font>
                 <Font name="System Italic" size="18.0" />
             </font>
         </Button>
+      <PasswordField fx:id="confirmPasswordField" layoutX="290.0" layoutY="-13.0" />
     </AnchorPane>
     <Label alignment="CENTER" layoutX="200.0" layoutY="41.0" prefHeight="65.0" prefWidth="238.0" text="REGISTER" textOverrun="WORD_ELLIPSIS">
         <font>
@@ -60,17 +64,24 @@
             <Font size="18.0" />
         </font>
     </Label>
-    <Label layoutX="117.0" layoutY="226.0" prefHeight="18.0" prefWidth="90.0" text="Password" textFill="WHITE">
+    <Label layoutX="111.0" layoutY="288.0" prefHeight="18.0" prefWidth="90.0" text="Password" textFill="WHITE">
         <font>
             <Font size="18.0" />
         </font>
     </Label>
-    <Label layoutX="117.0" layoutY="288.0" prefHeight="18.0" prefWidth="79.0" text="Email ID" textFill="WHITE">
+    <Label layoutX="116.0" layoutY="226.0" prefHeight="18.0" prefWidth="79.0" text="Email_ID" textFill="WHITE">
         <font>
             <Font size="18.0" />
         </font>
     </Label>
-    <TextField layoutX="288.0" layoutY="161.0" />
-    <TextField layoutX="288.0" layoutY="227.0" />
-    <TextField layoutX="288.0" layoutY="289.0" />
+    <TextField fx:id="usernameTextField" layoutX="288.0" layoutY="161.0" />
+    <TextField fx:id="emailidTextField" layoutX="288.0" layoutY="227.0" />
+    <PasswordField fx:id="setPasswordField" layoutX="288.0" layoutY="289.0" />
+   <Label fx:id="registerationMessageLabel" alignment="CENTER" layoutX="64.0" layoutY="117.0" prefHeight="18.0" prefWidth="470.0" textFill="#0d20f4" />
+   <Label fx:id="confirmPasswordLabel" alignment="CENTER" layoutX="127.0" layoutY="335.0" prefHeight="18.0" prefWidth="470.0" textFill="#0d20f4" />
+   <Label layoutX="89.0" layoutY="354.0" prefHeight="27.0" prefWidth="150.0" text="Confirm Password" textFill="WHITE">
+      <font>
+         <Font size="18.0" />
+      </font>
+   </Label>
 </AnchorPane>
