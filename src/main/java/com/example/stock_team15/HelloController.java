@@ -1,6 +1,10 @@
 package com.example.stock_team15;
 
+import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.scene.Node;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.PasswordField;
@@ -12,13 +16,20 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 
 import java.io.File;
+import java.io.IOException;
 import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.Statement;
+import java.util.Objects;
 import java.util.ResourceBundle;
 import java.net.URL;
 
 public class HelloController implements Initializable {
+
+    private Stage stage;
+    private Scene scene;
+    private Parent root;
+
 
     @FXML
     private Button loginButton;
@@ -30,6 +41,9 @@ public class HelloController implements Initializable {
     private TextField username;
     @FXML
     private PasswordField password;
+
+
+
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle){
         File brandingFile = new File("..\\..\\..\\..\\..\\Downloads\\stockb.png");
@@ -47,6 +61,13 @@ public class HelloController implements Initializable {
         return null;
     }
 
+    public void signupOnAction(ActionEvent event) throws IOException {
+        root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("register.fxml")));
+        stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+        scene = new Scene((root));
+        stage.setScene(scene);
+        stage.show();
+    }
     public void validateLogin(){
         DatabaseConnection connection = new DatabaseConnection();
         Connection connectDB = connection.getConnection();
@@ -71,11 +92,7 @@ public class HelloController implements Initializable {
         }
 
     }
-    /*@FXML
-    private Label welcomeText;
 
-    @FXML
-    protected void onHelloButtonClick() {
-        welcomeText.setText("Welcome to JavaFX Application!");
-    }*/
+
+
 }
