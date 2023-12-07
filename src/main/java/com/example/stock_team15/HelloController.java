@@ -95,7 +95,7 @@ public class HelloController implements Initializable {
 
     public void homePage() {
         try{
-            Parent root = FXMLLoader.load(getClass().getResource("Data.fxml"));
+            Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("Data.fxml")));
             Stage registerStage = new Stage();
             registerStage.initStyle(StageStyle.UNDECORATED);
             registerStage.setScene(new Scene(root, 723, 862));
