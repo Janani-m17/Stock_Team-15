@@ -7,7 +7,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="494.0" prefWidth="697.0" style="-fx-background-color: #003366;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane prefHeight="494.0" prefWidth="697.0" style="-fx-background-color: #003366;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.stock_team15.DataController">
    <children>
       <ButtonBar layoutX="69.0" layoutY="117.0" prefHeight="40.0" prefWidth="200.0" />
       <AnchorPane layoutX="16.0" layoutY="181.0" prefHeight="47.0" prefWidth="682.0" style="-fx-background-color: #FFFFFF;">
@@ -117,7 +117,7 @@
                   <Font name="System Bold Italic" size="24.0" />
                </font>
             </Label>
-            <Button layoutX="510.0" layoutY="72.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="192.0" style="-fx-background-color: #00CC00;" text="Go to Stocks">
+            <Button fx:id="addStocks" layoutX="510.0" layoutY="72.0" mnemonicParsing="false" onAction="#addStocksButtonOnAction" prefHeight="40.0" prefWidth="192.0" style="-fx-background-color: #00CC00;" text="Go to Stocks">
                <font>
                   <Font size="18.0" />
                </font>
@@ -239,12 +239,12 @@
             </Label>
          </children>
       </AnchorPane>
-      <Button layoutX="563.0" layoutY="142.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="112.0" style="-fx-background-color: #99CCFF;" text="My Profile" textFill="#001506">
+      <Button fx:id="profileButton" layoutX="563.0" layoutY="142.0" mnemonicParsing="false" onAction="#profileButtonOnAction" prefHeight="26.0" prefWidth="112.0" style="-fx-background-color: #99CCFF;" text="My Profile" textFill="#001506">
          <font>
             <Font size="14.0" />
          </font>
       </Button>
-      <Button layoutX="412.0" layoutY="141.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="112.0" style="-fx-background-color: #99CCFF;" text="My Portfolio">
+      <Button fx:id="myStocksButton" layoutX="412.0" layoutY="141.0" mnemonicParsing="false" onAction="#myStocksButtonOnAction" prefHeight="30.0" prefWidth="112.0" style="-fx-background-color: #99CCFF;" text="My Portfolio">
          <font>
             <Font size="14.0" />
          </font>
