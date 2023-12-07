@@ -128,7 +128,7 @@
          <children>
             <Label layoutX="20.0" layoutY="10.0" prefHeight="27.0" prefWidth="66.0" text="Reliance" textFill="WHITE">
                <font>
-                  <Font size="18.0" />
+                  <Font size="18.0"/>
                </font>
             </Label>
             <Label alignment="CENTER" layoutX="281.0" layoutY="10.0" prefHeight="27.0" prefWidth="131.0" text="Petrochemicals" textFill="#fafafa">
