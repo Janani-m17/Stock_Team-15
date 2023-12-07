@@ -7,98 +7,98 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="494.0" prefWidth="697.0" style="-fx-background-color: #001933;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane prefHeight="494.0" prefWidth="697.0" style="-fx-background-color: #003366;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
    <children>
       <ButtonBar layoutX="69.0" layoutY="117.0" prefHeight="40.0" prefWidth="200.0" />
       <AnchorPane layoutX="16.0" layoutY="181.0" prefHeight="47.0" prefWidth="682.0" style="-fx-background-color: #FFFFFF;">
          <children>
             <Label layoutX="24.0" layoutY="10.0" prefHeight="18.0" prefWidth="163.0" text="CompanyName" textFill="#0410f2">
                <font>
-                  <Font size="18.0" />
+                  <Font name="Century" size="18.0" />
                </font>
             </Label>
-            <Label layoutX="310.0" layoutY="10.0" prefHeight="18.0" prefWidth="94.0" text="Industry" textFill="#0d05f7">
+            <Label layoutX="307.0" layoutY="12.0" prefHeight="18.0" prefWidth="94.0" text="Industry" textFill="#0d05f7">
+               <font>
+                  <Font name="Century" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="546.0" layoutY="10.0" prefHeight="27.0" prefWidth="112.0" text="Growth Rate" textFill="#0800fa">
+               <font>
+                  <Font name="Century" size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="28.0" layoutY="247.0" prefHeight="47.0" prefWidth="667.0" style="-fx-background-color: #000000;">
+         <children>
+            <Label layoutX="14.0" layoutY="10.0" prefHeight="18.0" prefWidth="94.0" text="Amazon" textFill="WHITE">
                <font>
                   <Font size="18.0" />
                </font>
             </Label>
-            <Label layoutX="545.0" layoutY="10.0" prefHeight="27.0" prefWidth="112.0" text="Growth Rate" textFill="#0800fa">
+            <Label alignment="CENTER" layoutX="283.0" layoutY="10.0" prefHeight="27.0" prefWidth="120.0" style="-fx-background-color: #000000;" text="E-Commerce" textFill="#fcfcfc">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="568.0" layoutY="15.0" prefHeight="27.0" prefWidth="56.0" text="0.55%" textFill="#f4f4f4">
                <font>
                   <Font size="18.0" />
                </font>
             </Label>
          </children>
       </AnchorPane>
-      <AnchorPane layoutX="28.0" layoutY="247.0" prefHeight="47.0" prefWidth="667.0" style="-fx-background-color: #FFFFFF;">
+      <AnchorPane layoutX="24.0" layoutY="308.0" prefHeight="47.0" prefWidth="667.0" style="-fx-background-color: #000000;">
          <children>
-            <Label layoutX="14.0" layoutY="10.0" prefHeight="18.0" prefWidth="94.0" text="Amazon">
+            <Label layoutX="27.0" layoutY="10.0" prefHeight="18.0" prefWidth="56.0" text="Apple" textFill="#f4f4f4">
                <font>
                   <Font size="18.0" />
                </font>
             </Label>
-            <Label layoutX="291.0" layoutY="10.0" prefHeight="27.0" prefWidth="112.0" text="E-Commerce">
+            <Label alignment="CENTER" layoutX="251.0" layoutY="10.0" prefHeight="27.0" prefWidth="192.0" text="Technology" textFill="#fcfcfc">
                <font>
                   <Font size="18.0" />
                </font>
             </Label>
-            <Label layoutX="568.0" layoutY="15.0" prefHeight="27.0" prefWidth="56.0" text="0.55%">
+            <Label layoutX="580.0" layoutY="10.0" prefHeight="18.0" prefWidth="56.0" text="0.97%" textFill="WHITE">
                <font>
                   <Font size="18.0" />
                </font>
             </Label>
          </children>
       </AnchorPane>
-      <AnchorPane layoutX="24.0" layoutY="308.0" prefHeight="47.0" prefWidth="667.0" style="-fx-background-color: #FFFFFF;">
+      <AnchorPane layoutX="24.0" layoutY="372.0" prefHeight="47.0" prefWidth="667.0" style="-fx-background-color: #000000;">
          <children>
-            <Label layoutX="20.0" layoutY="10.0" prefHeight="18.0" prefWidth="56.0" text="Apple">
+            <Label layoutX="20.0" layoutY="10.0" prefHeight="27.0" prefWidth="80.0" text="Alphabet" textFill="#fcfcfc">
                <font>
                   <Font size="18.0" />
                </font>
             </Label>
-            <Label alignment="CENTER" layoutX="238.0" layoutY="10.0" prefHeight="27.0" prefWidth="192.0" text="Technology">
+            <Label alignment="CENTER" layoutX="295.0" layoutY="10.0" prefHeight="27.0" prefWidth="94.0" text="Software" textFill="WHITE">
                <font>
                   <Font size="18.0" />
                </font>
             </Label>
-            <Label layoutX="570.0" layoutY="10.0" prefHeight="18.0" prefWidth="56.0" text="0.97%">
+            <Label layoutX="579.0" layoutY="10.0" prefHeight="18.0" prefWidth="56.0" text="0.70%" textFill="#fcfcfc">
                <font>
                   <Font size="18.0" />
                </font>
             </Label>
          </children>
       </AnchorPane>
-      <AnchorPane layoutX="24.0" layoutY="372.0" prefHeight="47.0" prefWidth="667.0" style="-fx-background-color: #FFFFFF;">
+      <AnchorPane layoutX="28.0" layoutY="550.0" prefHeight="47.0" prefWidth="667.0" style="-fx-background-color: #000000;">
          <children>
-            <Label layoutX="20.0" layoutY="10.0" prefHeight="27.0" prefWidth="80.0" text="Alphabet">
+            <Label layoutX="20.0" layoutY="10.0" prefHeight="18.0" prefWidth="56.0" text="Tesla" textFill="#efefef">
                <font>
                   <Font size="18.0" />
                </font>
             </Label>
-            <Label layoutX="301.0" layoutY="10.0" prefHeight="27.0" prefWidth="94.0" text="Software">
+            <Label alignment="CENTER" layoutX="290.0" layoutY="10.0" prefHeight="27.0" prefWidth="102.0" text="Automotives" textFill="WHITE">
                <font>
                   <Font size="18.0" />
                </font>
             </Label>
-            <Label layoutX="570.0" layoutY="10.0" prefHeight="18.0" prefWidth="56.0" text="0.70%">
-               <font>
-                  <Font size="18.0" />
-               </font>
-            </Label>
-         </children>
-      </AnchorPane>
-      <AnchorPane layoutX="28.0" layoutY="550.0" prefHeight="47.0" prefWidth="667.0" style="-fx-background-color: #FFFFFF;">
-         <children>
-            <Label layoutX="20.0" layoutY="10.0" prefHeight="18.0" prefWidth="56.0" text="Tesla">
-               <font>
-                  <Font size="18.0" />
-               </font>
-            </Label>
-            <Label layoutX="298.0" layoutY="10.0" prefHeight="27.0" prefWidth="102.0" text="Automotives">
-               <font>
-                  <Font size="18.0" />
-               </font>
-            </Label>
-            <Label layoutX="570.0" layoutY="10.0" prefHeight="18.0" prefWidth="56.0" text="1.45%">
+            <Label alignment="CENTER" layoutX="570.0" layoutY="10.0" prefHeight="18.0" prefWidth="56.0" text="1.45%" textFill="#f4f4f4">
                <font>
                   <Font size="18.0" />
                </font>
@@ -107,36 +107,36 @@
       </AnchorPane>
       <AnchorPane layoutX="4.0" prefHeight="119.0" prefWidth="716.0" style="-fx-background-color: #66FFFF;">
          <children>
-            <Label layoutX="58.0" layoutY="27.0" prefHeight="27.0" prefWidth="221.0" text="Investing is for Everybody!" textFill="#df03be">
+            <Label layoutX="58.0" layoutY="14.0" prefHeight="35.0" prefWidth="379.0" text="Investing is for Everybody!" textFill="#c004de">
                <font>
-                  <Font size="18.0" />
+                  <Font name="Consolas" size="24.0" />
                </font>
             </Label>
             <Label layoutX="44.0" layoutY="54.0" prefHeight="58.0" prefWidth="501.0" text="TOP COMPANIES TO GET YOU STARTED" textFill="#fa060e">
                <font>
-                  <Font size="24.0" />
+                  <Font name="System Bold Italic" size="24.0" />
                </font>
             </Label>
-            <Button layoutX="496.0" layoutY="21.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="200.0" style="-fx-background-color: #00CC00;" text="Go to Stocks">
+            <Button layoutX="510.0" layoutY="72.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="192.0" style="-fx-background-color: #00CC00;" text="Go to Stocks">
                <font>
                   <Font size="18.0" />
                </font>
             </Button>
          </children>
       </AnchorPane>
-      <AnchorPane layoutX="24.0" layoutY="431.0" prefHeight="47.0" prefWidth="667.0" style="-fx-background-color: #FFFFFF;">
+      <AnchorPane layoutX="24.0" layoutY="431.0" prefHeight="47.0" prefWidth="667.0" style="-fx-background-color: #000000;">
          <children>
-            <Label layoutX="20.0" layoutY="10.0" prefHeight="27.0" prefWidth="66.0" text="Reliance">
+            <Label layoutX="20.0" layoutY="10.0" prefHeight="27.0" prefWidth="66.0" text="Reliance" textFill="WHITE">
                <font>
                   <Font size="18.0" />
                </font>
             </Label>
-            <Label layoutX="290.0" layoutY="10.0" prefHeight="27.0" prefWidth="131.0" text="Petrochemicals">
+            <Label alignment="CENTER" layoutX="281.0" layoutY="10.0" prefHeight="27.0" prefWidth="131.0" text="Petrochemicals" textFill="#fafafa">
                <font>
                   <Font size="18.0" />
                </font>
             </Label>
-            <Label layoutX="570.0" layoutY="10.0" prefHeight="18.0" prefWidth="56.0" text="0.45%">
+            <Label alignment="CENTER" layoutX="570.0" layoutY="10.0" prefHeight="18.0" prefWidth="56.0" text="0.45%" textFill="#fcfcfc">
                <font>
                   <Font size="18.0" />
                </font>
@@ -144,95 +144,95 @@
          </children>
       </AnchorPane>
       <ScrollBar layoutX="709.0" layoutY="103.0" orientation="VERTICAL" prefHeight="759.0" prefWidth="14.0" />
-      <AnchorPane layoutX="28.0" layoutY="490.0" prefHeight="47.0" prefWidth="667.0" style="-fx-background-color: #FFFFFF;">
+      <AnchorPane layoutX="28.0" layoutY="490.0" prefHeight="47.0" prefWidth="667.0" style="-fx-background-color: #000000;">
          <children>
-            <Label layoutX="20.0" layoutY="10.0" prefHeight="27.0" prefWidth="80.0" text="Microsoft">
+            <Label layoutX="20.0" layoutY="10.0" prefHeight="27.0" prefWidth="80.0" text="Microsoft" textFill="WHITE">
                <font>
                   <Font size="18.0" />
                </font>
             </Label>
-            <Label layoutX="298.0" layoutY="10.0" prefHeight="27.0" prefWidth="94.0" text="Technology">
+            <Label alignment="CENTER" layoutX="294.0" layoutY="10.0" prefHeight="27.0" prefWidth="94.0" text="Technology" textFill="#fff9f9">
                <font>
                   <Font size="18.0" />
                </font>
             </Label>
-            <Label layoutX="570.0" layoutY="10.0" prefHeight="18.0" prefWidth="56.0" text="0.25%">
+            <Label alignment="CENTER" layoutX="570.0" layoutY="10.0" prefHeight="18.0" prefWidth="56.0" text="0.25%" textFill="#faf8f8">
                <font>
                   <Font size="18.0" />
                </font>
             </Label>
          </children>
       </AnchorPane>
-      <AnchorPane layoutX="24.0" layoutY="609.0" prefHeight="47.0" prefWidth="667.0" style="-fx-background-color: #FFFFFF;">
+      <AnchorPane layoutX="24.0" layoutY="609.0" prefHeight="47.0" prefWidth="667.0" style="-fx-background-color: #000000;">
          <children>
-            <Label layoutX="20.0" layoutY="10.0" prefHeight="18.0" prefWidth="56.0" text="Netflix">
+            <Label alignment="CENTER" layoutX="20.0" layoutY="10.0" prefHeight="18.0" prefWidth="56.0" text="Netflix" textFill="WHITE">
                <font>
                   <Font size="18.0" />
                </font>
             </Label>
-            <Label layoutX="290.0" layoutY="10.0" prefHeight="27.0" prefWidth="120.0" text="Entertainment">
+            <Label alignment="CENTER" layoutX="289.0" layoutY="10.0" prefHeight="27.0" prefWidth="120.0" text="Entertainment" textFill="WHITE">
                <font>
                   <Font size="18.0" />
                </font>
             </Label>
-            <Label layoutX="570.0" layoutY="10.0" prefHeight="18.0" prefWidth="56.0" text="2.13%">
+            <Label alignment="CENTER" layoutX="570.0" layoutY="10.0" prefHeight="18.0" prefWidth="56.0" text="2.13%" textFill="#fafafa">
                <font>
                   <Font size="18.0" />
                </font>
             </Label>
          </children>
       </AnchorPane>
-      <AnchorPane layoutX="24.0" layoutY="669.0" prefHeight="47.0" prefWidth="667.0" style="-fx-background-color: #FFFFFF;">
+      <AnchorPane layoutX="24.0" layoutY="669.0" prefHeight="47.0" prefWidth="667.0" style="-fx-background-color: #000000;">
          <children>
-            <Label layoutX="20.0" layoutY="10.0" prefHeight="18.0" prefWidth="56.0" text="Nestle">
+            <Label layoutX="20.0" layoutY="10.0" prefHeight="18.0" prefWidth="56.0" text="Nestle" textFill="WHITE">
                <font>
                   <Font size="18.0" />
                </font>
             </Label>
-            <Label layoutX="268.0" layoutY="10.0" prefHeight="27.0" prefWidth="174.0" text="Consumer Products">
+            <Label layoutX="277.0" layoutY="10.0" prefHeight="27.0" prefWidth="174.0" text="Consumer Products" textFill="WHITE">
                <font>
                   <Font size="18.0" />
                </font>
             </Label>
-            <Label layoutX="570.0" layoutY="10.0" prefHeight="18.0" prefWidth="56.0" text="1.08%">
+            <Label alignment="CENTER" layoutX="570.0" layoutY="10.0" prefHeight="18.0" prefWidth="56.0" text="1.08%" textFill="#fcfcfc">
                <font>
                   <Font size="18.0" />
                </font>
             </Label>
          </children>
       </AnchorPane>
-      <AnchorPane layoutX="24.0" layoutY="728.0" prefHeight="47.0" prefWidth="667.0" style="-fx-background-color: #FFFFFF;">
+      <AnchorPane layoutX="24.0" layoutY="728.0" prefHeight="47.0" prefWidth="667.0" style="-fx-background-color: #000000;">
          <children>
-            <Label layoutX="20.0" layoutY="10.0" prefHeight="27.0" prefWidth="94.0" text="JP Morgan">
+            <Label alignment="CENTER" layoutX="20.0" layoutY="10.0" prefHeight="27.0" prefWidth="94.0" text="JP Morgan" textFill="#fafafa">
                <font>
                   <Font size="18.0" />
                </font>
             </Label>
-            <Label layoutX="312.0" layoutY="10.0" prefHeight="18.0" prefWidth="66.0" text="Finance">
+            <Label alignment="CENTER" layoutX="309.0" layoutY="10.0" prefHeight="18.0" prefWidth="66.0" text="Finance" textFill="WHITE">
                <font>
                   <Font size="18.0" />
                </font>
             </Label>
-            <Label layoutX="570.0" layoutY="10.0" prefHeight="18.0" prefWidth="56.0" text="0.52%">
+            <Label alignment="CENTER" layoutX="570.0" layoutY="10.0" prefHeight="18.0" prefWidth="56.0" text="0.52%" textFill="#f2f2f2">
                <font>
                   <Font size="18.0" />
                </font>
             </Label>
          </children>
       </AnchorPane>
-      <AnchorPane layoutX="24.0" layoutY="788.0" prefHeight="47.0" prefWidth="667.0" style="-fx-background-color: #FFFFFF;">
+      <AnchorPane layoutX="24.0" layoutY="788.0" prefHeight="47.0" prefWidth="667.0" style="-fx-background-color: #000000;">
          <children>
-            <Label layoutX="20.0" layoutY="10.0" prefHeight="27.0" prefWidth="88.0" text="Facebook">
+            <Label layoutX="23.0" layoutY="10.0" prefHeight="27.0" prefWidth="88.0" text="Facebook" textFill="#fafafa">
                <font>
                   <Font size="18.0" />
                </font>
             </Label>
-            <Label layoutX="298.0" layoutY="10.0" prefHeight="27.0" prefWidth="94.0" text="Technology">
+            <Label alignment="CENTER" layoutX="299.0" layoutY="10.0" prefHeight="27.0" prefWidth="94.0" text="Technology" textFill="#fcfcfc">
                <font>
                   <Font size="18.0" />
                </font>
             </Label>
-            <Label layoutX="570.0" layoutY="10.0" prefHeight="18.0" prefWidth="56.0" text="0.41%">
+            <Label alignment="CENTER" layoutX="570.0" layoutY="10.0" prefHeight="18.0" prefWidth="56.0" text="0.41%" textFill="#f4f4f4">
                <font>
                   <Font size="18.0" />
                </font>
@@ -244,12 +244,7 @@
             <Font size="14.0" />
          </font>
       </Button>
-      <Button layoutX="310.0" layoutY="142.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="102.0" style="-fx-background-color: #99CCFF;" text="Portfolio">
-         <font>
-            <Font size="14.0" />
-         </font>
-      </Button>
-      <Button layoutX="28.0" layoutY="141.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="102.0" style="-fx-background-color: #99CCFF;" text="My Stocks">
+      <Button layoutX="412.0" layoutY="141.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="102.0" style="-fx-background-color: #99CCFF;" text="My Portfolio">
          <font>
             <Font size="14.0" />
          </font>
