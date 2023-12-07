@@ -13,9 +13,9 @@
 <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="476.0" prefWidth="665.0" style="-fx-background-color: #000000;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.stock_team15.HelloController">
 <left>
     <AnchorPane onDragDetected="#signupOnAction" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
-        <ImageView fx:id="brandingImageView" fitHeight="387.0" fitWidth="665.0" layoutX="2.0" layoutY="41.0" pickOnBounds="true" preserveRatio="true">
+        <ImageView fx:id="brandingImageView" fitHeight="387.0" fitWidth="665.0" layoutX="2.0" layoutY="41.0" pickOnBounds="true">
             <image>
-                <Image url="@../../StockImages/stockb.png" />
+                <Image url="@pictures\stockb.jpg" />
             </image>
         </ImageView>
         <Label layoutX="53.0" layoutY="60.0" prefHeight="76.0" prefWidth="612.0" text="WELCOME TO STOCK PORTFOLIO TRACKER" textFill="#f3f5fc" textOverrun="CLIP">
@@ -36,7 +36,7 @@
         <TextField fx:id="username" layoutX="289.0" layoutY="204.0" prefHeight="26.0" prefWidth="216.0" promptText="Username" />
         <PasswordField fx:id="password" layoutX="289.0" layoutY="270.0" prefHeight="26.0" prefWidth="220.0" promptText="Password" />
         <Button fx:id="login" layoutX="246.0" layoutY="356.0" mnemonicParsing="false" onAction="#loginButtonOnAction" prefHeight="26.0" prefWidth="116.0" style="-fx-background-color: #99FFFF;" text="Login" />
-        <Label fx:id="SignUpMessage" layoutX="172.0" layoutY="398.0" prefHeight="18.0" prefWidth="189.0" text="Don't have an Account?" textFill="WHITE">
+        <Label fx:id="signupMessageLabel" layoutX="172.0" layoutY="398.0" prefHeight="18.0" prefWidth="189.0" text="Don't have an Account?" textFill="WHITE">
             <font>
                 <Font size="16.0" />
             </font>

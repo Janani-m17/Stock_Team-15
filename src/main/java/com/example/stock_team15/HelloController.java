@@ -41,7 +41,8 @@ public class HelloController implements Initializable {
     private TextField username;
     @FXML
     private PasswordField password;
-
+    @FXML
+    private Button signupButton;
 
 
     @Override
@@ -96,3 +97,5 @@ public class HelloController implements Initializable {
 
 
 }
+
+
