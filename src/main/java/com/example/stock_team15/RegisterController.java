@@ -6,10 +6,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.control.Button;
-import javafx.scene.control.Label;
-import javafx.scene.control.TextField;
-import javafx.scene.control.PasswordField;
+import javafx.scene.control.*;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.stage.Stage;
@@ -21,7 +18,7 @@ import java.sql.Connection;
 import java.sql.Statement;
 import java.util.ResourceBundle;
 
-public class RegisterController implements Initializable {
+public class RegisterController {
     @FXML
     private ImageView shieldImageView;
 
@@ -47,13 +44,13 @@ public class RegisterController implements Initializable {
     private TextField phoneTextField;
 
     @FXML
-    private TextField dobTextField;
+    private DatePicker dobTextField;
 
-    public void initialize(URL url, ResourceBundle resourceBundle){
+    /*public void initialize(URL url, ResourceBundle resourceBundle){
         File shieldFile = new File("..\\..\\..\\..\\..\\Downloads\\stockb.png");
         Image shieldImage = new Image(shieldFile.toURI().toString());
         shieldImageView.setImage(shieldImage);
-    }
+    }*/
 
     public void registerButtonOnAction(ActionEvent event){
         //registerationMessageLabel.setText("Registered Successfully");
@@ -77,7 +74,7 @@ public class RegisterController implements Initializable {
         String Email_ID = emailidTextField.getText();
         String Password = setPasswordField.getText();
         String Phone = phoneTextField.getText();
-        String Dob = dobTextField.getText();
+        String Dob = dobTextField.getValue().toString();
 
         String insertFields = "INSERT INTO User(UserName,MailId, Password, PhoneNo, D_O_B) VALUES ('";
         String insertValues = Username + "','" + Email_ID + "','" + Password + "','" +  Phone + "','" + Dob +"')";
