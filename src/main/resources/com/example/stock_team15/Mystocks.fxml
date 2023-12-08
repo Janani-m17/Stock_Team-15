@@ -1,94 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #99CCFF;" xmlns="http://javafx.com/javafx/20" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.stock_team15.MyStocksController">
+<AnchorPane prefHeight="573.0" prefWidth="732.0" style="-fx-background-color: #FFFFFF;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.stock_team15.MyStocksController">
    <children>
-      <AnchorPane prefHeight="84.0" prefWidth="600.0" style="-fx-background-color: #003366;">
+      <TableView layoutX="94.0" layoutY="173.0" prefHeight="342.0" prefWidth="546.0">
+         <columns>
+            <TableColumn fx:id="idcol" maxWidth="133.5999412536621" prefWidth="115.99996948242188" text="Stock iD" />
+            <TableColumn fx:id="cidcol" prefWidth="130.3999786376953" text="Company ID" />
+            <TableColumn fx:id="namecol" prefWidth="163.2000732421875" text="Company Name" />
+            <TableColumn fx:id="pricecol" minWidth="-1.0" prefWidth="136.8000030517578" text="Bought Price" />
+         </columns>
+      </TableView>
+      <Pane layoutY="102.0" prefHeight="3.0" prefWidth="728.0" style="-fx-background-color: #000000;" />
+      <HBox alignment="CENTER" layoutX="683.0" layoutY="14.0" />
+      <Button layoutX="14.0" layoutY="118.0" mnemonicParsing="false" style="-fx-background-color: #00FFFF;" text="Refresh" />
+      <AnchorPane layoutX="-6.0" layoutY="-1.0" prefHeight="103.0" prefWidth="740.0" style="-fx-background-color: #003366;">
          <children>
-            <Label layoutX="210.0" layoutY="21.0" prefHeight="42.0" prefWidth="195.0" text="MY STOCKS" textFill="#faed00">
+            <Text fill="#ebff0b" layoutX="98.0" layoutY="62.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MY STOCKS" wrappingWidth="240.5366973876953">
                <font>
-                  <Font name="Berlin Sans FB" size="36.0" />
+                  <Font name="Bell MT Bold" size="36.0" />
                </font>
-            </Label>
-         </children>
-      </AnchorPane>
-      <Label layoutX="86.0" layoutY="139.0" prefHeight="18.0" prefWidth="112.0" />
-      <TextArea layoutX="20.0" layoutY="109.0" prefHeight="233.0" prefWidth="560.0" />
-      <Label layoutX="128.0" layoutY="157.0" />
-      <Label layoutX="58.0" layoutY="125.0" prefHeight="18.0" prefWidth="84.0" style="-fx-background-color: #E0E0E0;" text="STOCK ID">
-         <font>
-            <Font size="18.0" />
-         </font>
-      </Label>
-      <Label layoutX="221.0" layoutY="125.0" style="-fx-background-color: #E0E0E0;" text="COMPANY NAME">
-         <font>
-            <Font size="18.0" />
-         </font>
-      </Label>
-      <Label layoutX="436.0" layoutY="125.0" style="-fx-background-color: #E0E0E0;" text="BOUGHT PRICE">
-         <font>
-            <Font size="18.0" />
-         </font>
-      </Label>
-      <AnchorPane layoutX="51.0" layoutY="171.0" prefHeight="42.0" prefWidth="521.0">
-         <children>
-            <Label layoutX="34.0" layoutY="7.0" text="APL">
+            </Text>
+            <Button layoutX="641.0" layoutY="52.0" mnemonicParsing="false" style="-fx-background-color: #00FF00;" text="Remove">
                <font>
-                  <Font size="18.0" />
+                  <Font size="14.0" />
                </font>
-            </Label>
-            <Label layoutX="213.0" layoutY="7.0" text="Apple">
-               <font>
-                  <Font size="18.0" />
-               </font>
-            </Label>
-            <Label layoutX="412.0" layoutY="7.0" text="\$205">
-               <font>
-                  <Font size="18.0" />
-               </font>
-            </Label>
-         </children>
-      </AnchorPane>
-      <AnchorPane layoutX="51.0" layoutY="226.0" prefHeight="42.0" prefWidth="521.0">
-         <children>
-            <Label layoutX="34.0" layoutY="7.0" text="NFT">
-               <font>
-                  <Font size="18.0" />
-               </font>
-            </Label>
-            <Label layoutX="213.0" layoutY="7.0" text="Netflix">
-               <font>
-                  <Font size="18.0" />
-               </font>
-            </Label>
-            <Label layoutX="412.0" layoutY="7.0" text="\$105">
-               <font>
-                  <Font size="18.0" />
-               </font>
-            </Label>
-         </children>
-      </AnchorPane>
-      <AnchorPane layoutX="51.0" layoutY="287.0" prefHeight="42.0" prefWidth="521.0">
-         <children>
-            <Label layoutX="34.0" layoutY="7.0" text="FLP">
-               <font>
-                  <Font size="18.0" />
-               </font>
-            </Label>
-            <Label layoutX="213.0" layoutY="7.0" text="FlipKart">
-               <font>
-                  <Font size="18.0" />
-               </font>
-            </Label>
-            <Label layoutX="412.0" layoutY="7.0" text="\$130">
-               <font>
-                  <Font size="18.0" />
-               </font>
-            </Label>
+            </Button>
          </children>
       </AnchorPane>
    </children>
