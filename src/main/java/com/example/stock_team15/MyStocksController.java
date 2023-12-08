@@ -67,13 +67,17 @@ public class MyStocksController {
 
             while (resultSet.next()) {
                 int stockid = resultSet.getInt("stockid");
+                int companyid = resultSet.getInt("companyid");
                 String companyname = resultSet.getString("companyname");
                 float boughtprice = resultSet.getFloat("boughtprice");
 
+
                 // Append the information to the 'stockTextArea'
-                stockTextArea.appendText("Stock ID: " + stockid + "\n");
-                stockTextArea.appendText("Company Name: " + companyname + "\n");
-                stockTextArea.appendText("Bought Price: " + boughtprice + "\n");
+                stockTextArea.appendText( "      ");
+                stockTextArea.appendText( stockid + "                                  ");
+                stockTextArea.appendText( companyid + "                                  ");
+                stockTextArea.appendText(companyname + "                                  ");
+                stockTextArea.appendText(boughtprice + "\n");
             }
 
         } catch (SQLException e) {

@@ -20,13 +20,13 @@ public class RemoveController {
     private Button backButton;
 
     @FXML
-    private TextField companyidTextField;
+    private TextField stockidTextField;
 
     @FXML
     private Label removeLabel;
 
     public void removeButtonOnAction(ActionEvent event) {
-        if (!companyidTextField.getText().isEmpty()) {
+        if (!stockidTextField.getText().isEmpty()) {
             removeStock();
         } else {
             removeLabel.setText("Please enter a company ID");
@@ -42,10 +42,10 @@ public class RemoveController {
         DatabaseConnection connectNow = new DatabaseConnection();
         Connection connection = connectNow.getConnection();
 
-        String companyId = companyidTextField.getText();
+        String companyId = stockidTextField.getText();
 
         // Use DELETE statement to remove the stock with the specified CompanyId
-        String deleteSql = "DELETE FROM mystocks WHERE CompanyId = ?";
+        String deleteSql = "DELETE FROM mystocks WHERE StockId = ?";
 
         try (PreparedStatement preparedStatement = connection.prepareStatement(deleteSql)) {
             preparedStatement.setString(1, companyId);
