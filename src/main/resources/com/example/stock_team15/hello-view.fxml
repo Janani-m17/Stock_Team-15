@@ -15,10 +15,10 @@
     <AnchorPane onDragDetected="#signupOnAction" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
         <ImageView fx:id="brandingImageView" fitHeight="387.0" fitWidth="665.0" layoutX="2.0" layoutY="41.0" pickOnBounds="true">
             <image>
-                <Image url="@pictures\stockb.jpg" />
+                <Image url="C:\Users\Admin\IdeaProjects\java-project1\Stock_Team-15\src\main\resources\com\example\stock_team15\Images\img.png" />
             </image>
         </ImageView>
-        <Label layoutX="53.0" layoutY="60.0" prefHeight="76.0" prefWidth="612.0" text="WELCOME TO STOCK PORTFOLIO TRACKER" textFill="#f3f5fc" textOverrun="CLIP">
+        <Label alignment="CENTER" contentDisplay="CENTER" layoutX="28.0" layoutY="59.0" prefHeight="76.0" prefWidth="612.0" text="STOCK PORTFOLIO TRACKER" textFill="#f3f5fc" textOverrun="CLIP">
             <font>
                 <Font size="30.0" />
             </font>

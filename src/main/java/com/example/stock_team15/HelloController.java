@@ -25,7 +25,7 @@ import java.util.Objects;
 import java.util.ResourceBundle;
 import java.net.URL;
 
-public class HelloController implements Initializable {
+public class HelloController {
 
     private Stage stage;
     private Scene scene;
@@ -44,12 +44,12 @@ public class HelloController implements Initializable {
     @FXML
     private Button signupButton;
 
-    @Override
-    public void initialize(URL url, ResourceBundle resourceBundle){
-        File brandingFile = new File("..\\..\\..\\..\\..\\Downloads\\stockb.png");
-        Image brandingImage = new Image(brandingFile.toURI().toString());
-        brandingImageView.setImage(brandingImage);
-    }
+//    @Override
+//    public void initialize(URL url, ResourceBundle resourceBundle){
+//        File brandingFile = new File("..\\..\\..\\..\\..\\Downloads\\stockb.png");
+//        Image brandingImage = new Image(brandingFile.toURI().toString());
+//        brandingImageView.setImage(brandingImage);
+//    }
 
     public Button loginButtonOnAction(ActionEvent event){
         if(!username.getText().isBlank() && !password.getText().isBlank()){

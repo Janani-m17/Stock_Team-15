@@ -8,7 +8,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="437.0" prefWidth="600.0" style="-fx-background-color: #003366;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.stock_team15.BankController">
+<AnchorPane prefHeight="437.0" prefWidth="600.0" style="-fx-background-color: #003366;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.stock_team15.BankController">
    <children>
       <AnchorPane prefHeight="79.0" prefWidth="600.0" style="-fx-background-color: #0066CC;">
          <children>
@@ -29,29 +29,30 @@
             <Font size="24.0" />
          </font>
       </Label>
-      <TextField layoutX="311.0" layoutY="134.0" />
+      <TextField fx:id="banknameTextField" layoutX="311.0" layoutY="134.0" />
       <Label layoutX="77.0" layoutY="190.0" text="Account Number" textFill="WHITE">
          <font>
             <Font size="24.0" />
          </font>
       </Label>
-      <TextField layoutX="311.0" layoutY="195.0" />
-      <Label layoutX="113.0" layoutY="255.0" text="IFSC Code" textFill="WHITE">
+      <TextField fx:id="accountnoTextField" layoutX="311.0" layoutY="195.0" />
+      <Label layoutX="113.0" layoutY="310.0" text="IFSC Code" textFill="WHITE">
          <font>
             <Font size="24.0" />
          </font>
       </Label>
-      <TextField layoutX="311.0" layoutY="255.0" />
-      <Label layoutX="95.0" layoutY="315.0" text="Branch Name" textFill="WHITE">
+      <TextField fx:id="accountnameTextField" layoutX="311.0" layoutY="255.0" />
+      <Label layoutX="87.0" layoutY="250.0" prefHeight="35.0" prefWidth="166.0" text="Account Name" textFill="WHITE">
          <font>
             <Font size="24.0" />
          </font>
       </Label>
-      <TextField layoutX="312.0" layoutY="320.0" />
-      <Button layoutX="260.0" layoutY="383.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="76.0" style="-fx-background-color: #009900;" text="OK">
+      <TextField fx:id="ifsccodeTextField" layoutX="311.0" layoutY="315.0" />
+      <Button fx:id="okButton" layoutX="260.0" layoutY="383.0" mnemonicParsing="false" onAction="#okButtonOnAction" prefHeight="40.0" prefWidth="76.0" style="-fx-background-color: #009900;" text="OK">
          <font>
             <Font size="18.0" />
          </font>
       </Button>
+      <Label fx:id="okLabel" layoutX="114.0" layoutY="352.0" prefHeight="18.0" prefWidth="404.0" />
    </children>
 </AnchorPane>
