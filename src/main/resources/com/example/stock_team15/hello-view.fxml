@@ -18,9 +18,9 @@
                 <Image url="C:\Users\Admin\IdeaProjects\java-project1\Stock_Team-15\src\main\resources\com\example\stock_team15\Images\img.png" />
             </image>
         </ImageView>
-        <Label alignment="CENTER" contentDisplay="CENTER" layoutX="28.0" layoutY="59.0" prefHeight="76.0" prefWidth="612.0" text="STOCK PORTFOLIO TRACKER" textFill="#f3f5fc" textOverrun="CLIP">
+        <Label alignment="CENTER" contentDisplay="CENTER" layoutX="28.0" layoutY="59.0" prefHeight="76.0" prefWidth="612.0" text="STOCK PORTFOLIO TRACKER" textAlignment="CENTER" textFill="#f3f5fc" textOverrun="CLIP">
             <font>
-                <Font size="30.0" />
+                <Font name="Berlin Sans FB" size="30.0" />
             </font>
         </Label>
         <Label layoutX="123.0" layoutY="199.0" prefHeight="18.0" prefWidth="166.0" text="Username" textFill="WHITE">

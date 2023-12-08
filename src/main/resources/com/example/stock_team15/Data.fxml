@@ -117,7 +117,7 @@
                   <Font name="System Bold Italic" size="24.0" />
                </font>
             </Label>
-            <Button fx:id="addStocks" layoutX="510.0" layoutY="72.0" mnemonicParsing="false" onAction="#addStocksButtonOnAction" prefHeight="40.0" prefWidth="192.0" style="-fx-background-color: #00CC00;" text="Go to Stocks">
+            <Button fx:id="addStocks" layoutX="510.0" layoutY="72.0" mnemonicParsing="false" onAction="#addStocksButtonOnAction" prefHeight="40.0" prefWidth="174.0" style="-fx-background-color: #00CC00;" text="Go to Stocks">
                <font>
                   <Font size="18.0" />
                </font>
@@ -249,5 +249,6 @@
             <Font size="14.0" />
          </font>
       </Button>
+      <Button fx:id="backButton" layoutX="28.0" layoutY="129.0" mnemonicParsing="false" onAction="#backButtonOnAction" style="-fx-background-color: #FA8072;" text="Back" />
    </children>
 </AnchorPane>

@@ -373,5 +373,6 @@
          </children>
       </AnchorPane>
       <Button fx:id="buyButton" layoutX="735.0" layoutY="6.0" mnemonicParsing="false" onAction="#buyButtonOnAction" prefHeight="35.0" prefWidth="120.0" style="-fx-background-color: #00CC66;" text="ADD STOCKS" />
+      <Button fx:id="backButton" layoutX="14.0" layoutY="11.0" mnemonicParsing="false" onAction="#backButtonOnAction" prefHeight="26.0" prefWidth="54.0" style="-fx-background-color: #FA8072;" text="Back" />
    </children>
 </AnchorPane>
