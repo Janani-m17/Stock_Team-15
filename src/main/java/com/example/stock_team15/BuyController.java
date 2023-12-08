@@ -22,12 +22,19 @@ public class BuyController {
     @FXML
     private Button buyButton;
 
+    @FXML
+    private Button backButton;
+
     public void buyButtonOnAction(ActionEvent event) throws IOException {
         root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("Pay.fxml")));
         stage = (Stage)((Node)event.getSource()).getScene().getWindow();
         scene = new Scene((root));
         stage.setScene(scene);
         stage.show();
+    }
+    public void backButtonOnAction(ActionEvent event){
+        Stage stage=(Stage) backButton.getScene().getWindow();
+        stage.close();
     }
 
 }

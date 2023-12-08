@@ -26,6 +26,10 @@ public class DataController {
 
     @FXML
     private Button addStocks;
+
+    @FXML
+    private Button backButton;
+
     public void profileButtonOnAction(ActionEvent event) throws IOException {
         root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("Myprofile.fxml")));
         stage = (Stage)((Node)event.getSource()).getScene().getWindow();
@@ -49,5 +53,9 @@ public class DataController {
         stage.show();
     }
 
+    public void backButtonOnAction(ActionEvent event){
+        Stage stage=(Stage) backButton.getScene().getWindow();
+        stage.close();
+    }
 
 }

@@ -18,6 +18,9 @@ public class MyProfileController {
     private Parent root;
 
     @FXML
+    private Button backButton;
+
+    @FXML
     private Button addBankButton;
     public void addBankButtonOnAction(ActionEvent event) throws IOException {
         root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("Bank.fxml")));
@@ -25,5 +28,10 @@ public class MyProfileController {
         scene = new Scene((root));
         stage.setScene(scene);
         stage.show();
+    }
+
+    public void backButtonOnAction(ActionEvent event){
+        Stage stage=(Stage) backButton.getScene().getWindow();
+        stage.close();
     }
 }
