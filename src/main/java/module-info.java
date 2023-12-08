@@ -8,4 +8,6 @@ module com.example.stock_team15 {
 
     opens com.example.stock_team15 to javafx.fxml;
     exports com.example.stock_team15;
+    exports com.example.stock_team15.model;
+    opens com.example.stock_team15.model to javafx.fxml;
 }
